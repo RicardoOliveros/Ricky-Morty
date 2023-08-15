@@ -1,0 +1,208 @@
+:root {
+    --primary-color: #000;
+    --secondary-color: #fff;
+}
+
+.dark-mode {
+    --primary-color: #fff;
+    --secondary-color: #000;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "Courier New", Courier, monospace;
+    background-color: var(--primary-color);
+}
+
+/* Aca van los estilos del header */
+
+.header {
+    background-color: #3ab54a;
+    padding: 2px;
+}
+
+.containerHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.primerGrupo {
+    display: flex;
+    align-items: center;
+    margin-left: 2pc;
+}
+
+.imageHContainer {
+    width: 48px;
+    height: 48px;
+    margin-right: 10px;
+}
+
+.imageHContainer img {
+    width: 100%;
+    height: 100%;
+}
+
+.primerGrupo h4 {
+    color: var(--secondary-color);
+    font-weight: 200;
+}
+
+#mode {
+    border: none;
+    margin-right: 2pc;
+    background-color: #3ab54a;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    font-weight: 200;
+    color: var(--secondary-color);
+    cursor: pointer;
+}
+
+/* Final estilos del header */
+
+/* Aca van los estilos del main */
+
+
+
+.message {
+    height: 90vh;
+    width: 100%;
+}
+
+.message h1 {
+    margin-top: 1pc;
+    font-family: 'Tektur', cursive;
+    font-weight: 700;
+    text-align: center;
+    font-size: 96px;
+    color: var(--secondary-color);
+}
+
+.languages {
+    display: flex;
+    justify-content: center;
+    color: var(--secondary-color);
+    margin: 2pc 0 2pc 0;
+}
+
+.languages p {
+    margin-right: 1pc;
+    font-family: 'Tektur', cursive;
+    font-weight: 400;
+    font-size: 48px;
+}
+
+.arrow {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2pc;
+}
+
+.arrow i {
+    cursor: pointer;
+    color: var(--secondary-color);
+    font-size: 10pc
+}
+
+.element {
+    display: flex;
+    height: 100vh;
+}
+
+.contenido {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    margin-left: 16px;
+
+}
+
+.contenido h1 {
+    font-family: 'Tektur', cursive;
+    font-weight: 900;
+    margin-bottom: 2pc;
+    color: var(--secondary-color);
+}
+
+.contenido p {
+    margin-bottom: 12px;
+    color: var(--secondary-color);
+}
+
+.imageElement {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.imageContainerE {
+    width: 493px;
+    height: 423px;
+
+}
+
+.imageContainerE img {
+    height: 100%;
+    width: 100%;
+}
+
+.imageContainerF {
+    width: 493px;
+    height: 216px;
+
+}
+
+.imageContainerF img {
+    height: 100%;
+    width: 100%;
+}
+
+.imageContainerG {
+    width: 493px;
+    height: 370px;
+
+}
+
+.imageContainerG img {
+    height: 100%;
+    width: 100%;
+}
+
+.fetch {
+    margin-right: 20px;
+}
+
+.fetch h1 {
+    text-align: center;
+}
+
+
+/* Aca van los estilos de la busqueda de caracteres */
+
+.search {
+    background-color: #3ab54a;
+    padding: 2px;
+}
+
+.containerSearch {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Final de estilos busqueda de caracteres */
+
+/* Final estilos del main */
+
+/* Aca van los estilos del footer */
+
+
+/* Final estilos del footer */
