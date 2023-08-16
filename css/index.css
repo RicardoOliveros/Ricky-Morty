@@ -200,9 +200,67 @@ body {
 
 /* Final de estilos busqueda de caracteres */
 
+/* Aca van los estilos de la tarjeta de personajes */
+
+.search {
+    margin-bottom: 2pc;
+}
+
+#root {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1pc;
+    margin-bottom: 2pc;
+}
+
+#root img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+}
+
+.containerCard {
+    display: flex;
+    justify-content: space-between;
+    background-color: #232323;
+    color: #fff;
+    padding: 20px 18px 20px 18px;
+    border-radius: 8px;
+
+}
+
+.informationCards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/* Final de estilos de la tarjeta */
+
 /* Final estilos del main */
 
 /* Aca van los estilos del footer */
+
+.containerFooter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3ab54a;
+}
+
+.searchCharacters {
+    margin-right: 2pc;
+}
+
+
+.upArrow {
+    list-style: none;
+    color: #fff;
+    cursor: pointer;
+}
+
 
 
 /* Final estilos del footer */

@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Tektur:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Ricky and Morty</title>
 </head>
 
@@ -37,7 +38,7 @@
                 <p>JAVASCRIPT</p>
             </div>
             <div class="arrow">
-                <i class="bx bx-down-arrow-alt bx-fade-up ko"></i>
+                <a href="#" id="arrowDown"><i class="bx bx-down-arrow-alt bx-fade-up ko"></i></a>
             </div>
         </section>
 
@@ -59,7 +60,7 @@
 
             </div>
             <div class="imageElement">
-                <div class="imageContainerE">
+                <div class="imageContainerE" data-aos="fade-left">
                     <img src="/img/document.png" alt="">
                 </div>
 
@@ -68,7 +69,7 @@
         <section class="element">
 
             <div class="imageElement">
-                <div class="imageContainerF">
+                <div class="imageContainerF" data-aos="fade-right">
                     <img src="/img/fetch.png" alt="">
                 </div>
             </div>
@@ -104,7 +105,7 @@
 
             </div>
             <div class="imageElement">
-                <div class="imageContainerG">
+                <div class="imageContainerG" data-aos="fade-right">
                     <img src="/img/searchRicky.png" alt="">
                 </div>
 
@@ -128,8 +129,33 @@
 
             </div>
         </section>
+
+        <section class="tarjetasRicky">
+            <div id="root">
+
+            </div>
+        </section>
     </main>
-    <footer></footer>
+    <footer id="footer">
+        <div class="containerFooter">
+
+            <div class="primerGrupo">
+                <div class="imageHContainer">
+                    <img src="/img/logo-Nav.svg" alt="logo Ricky and Morty">
+                </div>
+
+                <h4 id="titleRicky">Ricky and Morty</h4>
+            </div>
+            <div class="searchCharacters">
+                <ul class="upArrow">
+                    <li id="btnScrollToTop">🡹</li>
+                </ul>
+
+            </div>
+
+        </div>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="/js/index.js"></script>
 </body>
 
