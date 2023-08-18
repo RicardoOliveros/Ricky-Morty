@@ -1,31 +1,41 @@
 AOS.init();
-
-let boton = document.getElementById("mode")
+let boton = document.getElementById("mode");
+let before = document.getElementById("beforeBtn");
+let after = document.getElementById("afterBtn");
+let NumberPage = 1;
 
 boton.addEventListener('click', () => {
     document.body.classList.toggle("dark-mode")
 })
 
-const Url = 'https://rickandmortyapi.com/api/character';
+
+
+
 const Main = document.getElementById('root');
 
+function GetInfo(NumberPage) {
+    const Url = `https://rickandmortyapi.com/api/character?page=${NumberPage}`;
 
-fetch(Url)
+    fetch(Url)
 
-    .then(response => {
-        return response.json()
-    })
+        .then(response => {
+            return response.json()
+        })
 
-    .then(data => {
-        console.log(data);
-        const Info = data.results
-        console.log(Info)
-        Info.map(item => {
-            Main.innerHTML += `
+        .then(data => {
+            console.log(data);
+            const Info = data.results
+            console.log(Info)
+            Main.innerHTML = "";
+            Info.map(item => {
+                const nombre = item.name.length > 13 ? item.name.slice(0, 11) + '..' : item.name;
+                Main.innerHTML += `
         <div>
             <div class="containerCard">
                 <div class="titulosCard"> 
-                <h2>${item.name}</h2>
+
+                
+                <h2>${nombre}</h2>
                 <img src="${item.image}">
                 </div>
 
@@ -37,10 +47,14 @@ fetch(Url)
             </div>
         </div>
         `
+            })
+
+
         })
 
+}
 
-    })
+GetInfo(NumberPage)
 
 btnScrollToTop.addEventListener("click", () => {
     window.scrollTo({
@@ -49,3 +63,18 @@ btnScrollToTop.addEventListener("click", () => {
     });
 })
 
+before.addEventListener("click", () => {
+    NumberPage--;
+    searchCh.scrollIntoView({
+        behavior: 'smooth'
+    })
+    GetInfo(NumberPage)
+})
+
+after.addEventListener("click", () => {
+    NumberPage++;
+    searchCh.scrollIntoView({
+        behavior: 'smooth'
+    })
+    GetInfo(NumberPage)
+})
