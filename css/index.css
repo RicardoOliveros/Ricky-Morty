@@ -8,6 +8,10 @@
     --secondary-color: #000;
 }
 
+.hide {
+    display: none;
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -259,6 +263,11 @@ body {
     margin-right: 2pc;
 }
 
+.searchCharacters ul a {
+    text-decoration: none;
+    color: #fff;
+}
+
 
 .upArrow {
     list-style: none;
@@ -293,6 +302,7 @@ body {
 
 
 .botones button {
+    cursor: pointer;
     border: none;
     border-radius: 4px;
     width: 32px;
