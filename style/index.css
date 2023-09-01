@@ -310,3 +310,16 @@ body {
 }
 
 /* Final estilos del footer */
+
+/* Media query */
+
+@media (max-width: 800px) {
+    .element {
+        display: block;
+        margin-top: 4pc;
+    }
+
+    .contenido {
+        width: 100%;
+    }
+}

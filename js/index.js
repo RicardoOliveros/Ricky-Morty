@@ -56,7 +56,6 @@ function GetInfo(NumberPage) {
 
 GetInfo(NumberPage)
 
-
 // BUSCADOR
 
 const buscar = document.getElementById("btnSearch");
@@ -65,7 +64,6 @@ const inputB = document.getElementById('searchCharac');
 buscar.addEventListener('click', () => {
 
     fetch(url)
-
         .then(response => {
             return response.json()
         })
